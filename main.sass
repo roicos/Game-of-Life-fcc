@@ -1,0 +1,98 @@
+$lightBlue: #6da3c7
+$darkBlue: #025377
+$lightGrey: #b2c0cb
+$turquoise: #09cac7
+$aquamarine: #02686f
+$white: #fff
+
+$fontSizeBig: 24px
+$fontSizeSmall: 16px
+
+$cellLarge: 15px
+$cellMedium: 12px
+$cellSmall: 9px
+
+body
+  background-color: $lightBlue
+  background-image: radial-gradient($white, $darkBlue)
+  color: $white
+  font-family: monospace
+
+  #header
+    position: fixed
+    z-index: 20
+    height: $fontSizeBig*2
+    background-color: $darkBlue
+    width: 100%
+    font-size: $fontSizeBig
+    line-height: $fontSizeBig*2
+    
+    a
+      color: $white
+      &:hover
+        text-decoration: none !important
+
+
+  #container
+    padding-top: 70px
+  
+    .wrapper 
+      background-color: $darkBlue
+      border-radius: 10px
+      padding: 5px
+      font-size: $fontSizeSmall
+      &.controls-wrapper
+        border-bottom-right-radius: 0
+        border-bottom-left-radius: 0
+      &.settings-wrapper
+        border-top-right-radius: 0
+        border-top-left-radius: 0
+    
+      .row
+        padding: 5px
+      
+    #simulation
+      padding: 10px
+      margin: 0 auto
+      &.small
+        width: $cellLarge*50
+        .cell
+          width: $cellLarge
+          height: $cellLarge
+      &.medium
+        width: $cellMedium*70
+        .cell
+          width: $cellMedium
+          height: $cellMedium
+      &.large
+        width: $cellSmall*100
+        .cell
+          width: $cellSmall
+          height: $cellSmall
+        
+
+      .cell
+        border: 1px solid
+        background-color: $lightGrey
+        &.live
+          background-color: $turquoise
+          &.old
+            background-color: $aquamarine
+
+  #hint 
+    margin: 30px 0
+    font-size: $fontSizeSmall
+    background-color: $darkBlue
+    padding: 20px
+    border-radius: 10px
+    
+button.btn
+  color: $aquamarine
+  font-weight: bold
+  background-color: $lightGrey
+  min-width: 100px
+  padding: 0
+  font-size: $fontSizeSmall
+  &:hover, &:active, &.active
+    background-color: $turquoise
+    color: $white

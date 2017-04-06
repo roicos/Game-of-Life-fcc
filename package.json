@@ -1,0 +1,23 @@
+{
+  "name": "game-of-life-fcc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roicos/Game-of-Life-fcc.git"
+  },
+  "author": "Ekaterina Dontsova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/roicos/Game-of-Life-fcc/issues"
+  },
+  "homepage": "https://github.com/roicos/Game-of-Life-fcc#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-core": "^6.24.0"
+  }
+}
